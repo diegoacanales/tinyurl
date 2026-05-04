@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <meta name="robots" content="noindex">
+  <script>
+    // Edit this list with your destination URLs
+    var urls = [
+      'https://example.com/one',
+      'https://example.com/two',
+      'https://example.com/three'
+    ];
+
+    var url = urls[Math.floor(Math.random() * urls.length)];
+    window.location.replace(url);
+  </script>
+</head>
+<body>
+  <p>If you are not redirected automatically, <a id="fallback" href="#">click here</a>.</p>
+  <script>
+    document.getElementById('fallback').href = url;
+  </script>
+</body>
+</html>
